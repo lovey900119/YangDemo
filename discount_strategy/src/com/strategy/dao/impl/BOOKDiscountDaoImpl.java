@@ -4,13 +4,14 @@ import com.strategy.dao.CommodityDao;
 import com.strategy.entity.Commodity;
 import com.strategy.entity.CommodityType;
 
-//图书打九折
-public class BOOKDiscountDaoImpl implements CommodityDao {
+//book Hit ten percent off, total price
+public class BookDiscountDaoImpl implements CommodityDao {
 
     @Override
     public void Selling(Commodity commodity) {
         System.out.println(CommodityType.getName(commodity.getType())
-                + "打九折，总价：" + (commodity.getPrice() * 0.9));
+                + "Hit ten percent off, total price："
+                + (commodity.getPrice() * 0.9));
     }
 
 }

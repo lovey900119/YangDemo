@@ -2,11 +2,8 @@ package com.strategy.entity;
 
 public class Commodity {
 
-    // 商品名称
     private String name;
-    // 商品类型
     private int type;
-    // 商品单价
     private double price;
 
     public String getName() {

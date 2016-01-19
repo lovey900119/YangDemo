@@ -10,10 +10,11 @@ public class FoodRebateDaoImpl implements CommodityDao {
     public void Selling(Commodity commodity) {
         if (200 <= commodity.getPrice()) {
             System.out.println(CommodityType.getName(commodity.getType())
-                    + "满200减100,总价：" + (commodity.getPrice() - 100));
+                    + "Purchase 200 reduced by 100， total price："
+                    + (commodity.getPrice() - 100));
         } else {
             System.out.println(CommodityType.getName(commodity.getType())
-                    + ",总价：" + commodity.getPrice());
+                    + ",total price：" + commodity.getPrice());
         }
     }
 
