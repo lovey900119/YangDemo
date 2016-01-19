@@ -4,9 +4,12 @@ import com.state.discount.Discount;
 
 public class DiscountImpl implements Discount {
 
-	@Override
-	public void discount(double price) {
-		System.out.println("Âú300´ò6ÕÛ,×Ü¼Û£º" + price * 0.6);
-	}
+    @Override
+    public void discount(double price) {
+        if (300 <= price) {
+            System.out.println("Purchase 300 discount 6£¬total price£º" + price
+                    * 0.6);
+        }
+    }
 
 }

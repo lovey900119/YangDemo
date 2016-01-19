@@ -1,23 +1,22 @@
 package com.state.context;
 
 import com.state.discount.Discount;
+import com.state.discount.impl.RebateImpl;
 
-public class Context implements Discount {
+public class Context {
 
-	private Discount discount;
+    private Discount discount = new RebateImpl();
 
-	@Override
-	public void discount(double price) {
-		this.discount.discount(price);
+    public void discount(double price) {
+        this.discount.discount(price);
+    }
 
-	}
+    public Discount getDiscount() {
+        return discount;
+    }
 
-	public Discount getDiscount() {
-		return discount;
-	}
-
-	public void setDiscount(Discount discount) {
-		this.discount = discount;
-	}
+    public void setDiscount(Discount discount) {
+        this.discount = discount;
+    }
 
 }
