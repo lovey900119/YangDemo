@@ -16,3 +16,4 @@ public class RebateImpl implements Discount {
     }
 
 }
+ 
