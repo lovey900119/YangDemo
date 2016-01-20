@@ -9,9 +9,11 @@ public class Shopping {
     public static void main(String[] args) {
 
         Commodity commodity = new Commodity();
-        commodity.setPrice(250); // 价格
-        commodity.setType(1);// 类型
+        commodity.setPrice(250);
+        commodity.setType(1);
         CommodityDao commdit = SimpleFactoryControl.Selling(commodity);
         commdit.Selling(commodity);
+        
     }
+    
 }

@@ -10,8 +10,9 @@ public class DiscountTest {
         double price = 100;
         Context con = new Context();
         con.discount(price);
-        
-        Discount d = new RebateImpl();
-        d.discount(400);
+
+        // Discount d = new RebateImpl();
+        // d.discount(price);
     }
+
 }

@@ -9,7 +9,7 @@ public class CommodityOrdinaryDaoImpl implements CommodityDao {
     @Override
     public void Selling(Commodity commodity) {
         System.out.println(CommodityType.getName(commodity.getType())
-                + "正常价格,总价：;" + commodity.getPrice());
+            + "正常价格,总价：;" + commodity.getPrice());
 
     }
 

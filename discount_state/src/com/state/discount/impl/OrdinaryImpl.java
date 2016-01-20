@@ -11,7 +11,6 @@ public class OrdinaryImpl implements Discount {
         } else {
             new DiscountImpl().discount(price);
         }
-
     }
 
 }

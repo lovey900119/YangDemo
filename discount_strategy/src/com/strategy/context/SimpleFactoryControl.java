@@ -7,6 +7,7 @@ import com.strategy.dao.impl.FoodRebateDaoImpl;
 import com.strategy.entity.Commodity;
 
 public class SimpleFactoryControl {
+    
     public static CommodityDao Selling(Commodity commodity) {
         if (commodity.getType() == 1) {
             return new BookDiscountDaoImpl();
@@ -16,4 +17,5 @@ public class SimpleFactoryControl {
             return new CommodityOrdinaryDaoImpl();
         }
     }
+    
 }
