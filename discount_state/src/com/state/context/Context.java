@@ -3,9 +3,9 @@ package com.state.context;
 import com.state.discount.Discount;
 import com.state.discount.impl.RebateImpl;
 
-public class Context {
+public class Context implements Discount {
 
-    private Discount discount = new RebateImpl();
+    private Discount discount;
 
     public void discount(double price) {
         this.discount.discount(price);

@@ -7,11 +7,11 @@ public class RebateImpl implements Discount {
     @Override
     public void discount(double price) {
         if (200 > price && price > 0) {
-            System.out.println("Original price��" + price);
+            System.out.println("普通价格：" + price);
         } else if (200 <= price && price > 0) {
             new OrdinaryImpl().discount(price);
         } else {
-            System.out.println("Price error");
+            System.out.println("价格错误");
         }
     }
 

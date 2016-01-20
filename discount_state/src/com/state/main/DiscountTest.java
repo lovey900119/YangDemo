@@ -7,13 +7,11 @@ import com.state.discount.impl.RebateImpl;
 public class DiscountTest {
 
     public static void main(String[] args) {
-//        // commodity price
-//        double price = 100;
-//
-//        Context con = new Context();
-
-    //    con.discount(price);
-        Discount d=new RebateImpl();
+        double price = 100;
+        Context con = new Context();
+        con.discount(price);
+        
+        Discount d = new RebateImpl();
         d.discount(400);
     }
 }
