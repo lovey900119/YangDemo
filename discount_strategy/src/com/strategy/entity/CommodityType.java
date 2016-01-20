@@ -17,9 +17,9 @@ public class CommodityType {
 
     public static void init() {
         staticMap = new TreeMap<Object, String>();
-        staticMap.put(1, "book");
-        staticMap.put(2, "food");
-        staticMap.put(3, "appliance");
-        staticMap.put(4, "Vegetables");
+        staticMap.put(1, "图书类");
+        staticMap.put(2, "食品类");
+        staticMap.put(3, "生活类");
+        staticMap.put(4, "蔬菜类");
     }
 }

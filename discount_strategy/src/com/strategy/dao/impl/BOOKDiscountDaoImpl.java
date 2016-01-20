@@ -10,8 +10,7 @@ public class BookDiscountDaoImpl implements CommodityDao {
     @Override
     public void Selling(Commodity commodity) {
         System.out.println(CommodityType.getName(commodity.getType())
-                + "Hit ten percent off, total price��"
-                + (commodity.getPrice() * 0.9));
+            + "打九折, 总价：" + (commodity.getPrice() * 0.9));
     }
 
 }

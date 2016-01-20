@@ -1,4 +1,4 @@
-package com.strategy.logicprocessing;
+package com.strategy.context;
 
 import com.strategy.dao.CommodityDao;
 import com.strategy.dao.impl.BookDiscountDaoImpl;
