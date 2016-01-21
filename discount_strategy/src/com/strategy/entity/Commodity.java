@@ -3,7 +3,7 @@ package com.strategy.entity;
 public class Commodity {
 
     private String name;
-    private int type;
+    private CommodityType type;
     private double price;
 
     public String getName() {
@@ -14,11 +14,11 @@ public class Commodity {
         this.name = name;
     }
 
-    public int getType() {
+    public CommodityType getType() {
         return type;
     }
 
-    public void setType(int type) {
+    public void setType(CommodityType type) {
         this.type = type;
     }
 

@@ -1,9 +1,9 @@
-package com.strategy.dao;
+package com.strategy.biz;
 
 import com.strategy.entity.Commodity;
 
-public interface CommodityDao {
+public interface CommodityBiz {
 
     public void Selling(Commodity commodity);
-    
+
 }
